@@ -1,0 +1,29 @@
+{
+  "name": "exchange",
+  "homepage": "https://github.com/yurastich/angular-progect",
+  "authors": [
+    "Yurii Karpenko"
+  ],
+  "description": "exchange between people",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.4.9",
+    "angular-mocks": "^1.5.0",
+    "bootstrap": "^3.3.6",
+    "angular-bootstrap": "^1.1.2",
+    "angular-route": "^1.5.0"
+  }
+}

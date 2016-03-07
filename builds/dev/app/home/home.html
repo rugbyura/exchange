@@ -1,0 +1,28 @@
+
+
+<div class="jumbotron">
+    <h1>Home</h1>
+    <p>Container with text</p>
+    <button type="button" class='btn btn-success' ng-click="addAlert('Вспливаха')">Добавить всплывашку</button>
+    <input type="text" class="form-control" ng-model="fil">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Номер</th>
+            <th>Имя</th>
+            <th>Возраст</th>
+            <th>Баланс</th>
+            <th>Цвет глаз</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="user in hc.users | filter:fil">
+                <td>{{user.index+1}}</td>
+                <td>{{user.name.first}}</td>
+                <td>{{user.age}}</td>
+                <td>{{user.balance}}</td>
+                <td>{{user.eyeColor | eye:color}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
